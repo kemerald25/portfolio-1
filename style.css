@@ -10,18 +10,16 @@ body {
     background-color: #fe4799;
 }
 
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Sans serif";
-} */
+
 
 section {
     display: flex;
     justify-content: center;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
 
 .section1 {
@@ -31,9 +29,9 @@ section {
 
 nav {
     position: fixed;
-    z-index: 1;
+    z-index: 9999;
     width: 100%;
-    background-color: #000;
+    background-color: #25262a;
     height: 70px;
     align-items: center;
     display: flex;
@@ -47,11 +45,57 @@ nav {
     justify-content: center;
 
 }
+.harmburger {
+    overflow: hidden;
+    display: none;
+    width: 100%;
+}
+
+.icon {
+    color: #fff;
+    font-size: 35px;
+    margin-left: 250px;
+}
+
+.harmburger #navMenu {
+    display: none;
+    background-color: #25262a;
+    position: absolute;
+    height: 100vh;
+    left: 0;
+    width: 50%;
+    margin-top: 10px;
+    transition: ease-in-out 1s;
+}
+
+#navMenu a {
+    color: white;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    padding-left: 20px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: left;
+}
+
+.harmburger a svg {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+    font-size: 15px;
+}
+.harmburger a:hover {
+    background-color: #de3380;
+    color: #000;
+}
 
 .logo {
     width: 35px;
     display: flex;
-    margin-right: 400px;
+    margin-right: 580px;
 
 }
 
@@ -152,8 +196,18 @@ nav {
     grid-auto-rows: 50px auto;
     margin: 0 auto;
     max-width: 1440px;
-    /* gap: 10px; */
+    gap: 10px;
 }
+
+.grid5 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-auto-rows: 50px auto;
+    margin: 0 auto;
+    max-width: 1100px;
+    gap: 10px;
+}
+
 .grid4 {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -276,32 +330,39 @@ hr {
     margin: 0;
     margin-bottom: 20px;
 }
-.btn{
+
+.btn {
     padding: 10px 40px;
     background-color: #fe4799;
     color: #fff;
     border-radius: 20px;
     text-decoration: none;
 }
-.about-pic img{
+
+.about-pic img {
     width: 100%;
     height: 100%;
     margin: auto;
     object-fit: cover;
 }
-.services{
+
+.services {
     padding-top: 100px;
     width: 100%;
     /* background-color: #f2d5d7; */
+    margin-bottom: 100px;
 }
-.serve{
+
+.serve {
     width: 100%;
     color: #fff;
 }
-.serve h2{
+
+.serve h2 {
     grid-column: 1/5;
 }
-.first-port{
+
+.first-port {
     grid-column: 1/4;
     grid-row: 2/7;
     background-color: transparent;
@@ -310,7 +371,8 @@ hr {
     align-items: center;
     display: flex;
 }
-.second-port{
+
+.second-port {
     grid-column: 4/8;
     grid-row: 2/7;
     background-color: transparent;
@@ -319,7 +381,8 @@ hr {
     display: flex;
     align-items: center;
 }
-.third-port{
+
+.third-port {
     grid-column: 8/11;
     grid-row: 2/7;
     background-color: transparent;
@@ -328,8 +391,317 @@ hr {
     display: flex;
     align-items: center;
 }
-.design{
+
+.design {
     margin: 0px 30px;
 }
 
+.portfolio {
+    padding-top: 100px;
+    width: 100%;
+    margin-bottom: 100px;
+}
 
+.portfolio div {
+    background-color: #fff;
+}
+
+.portfolio h2 {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    color: #de3380;
+}
+
+.one-grid {
+    grid-column: 1/4;
+    grid-row: 2/10;
+}
+
+.one-grid img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.two-grid {
+    grid-column: 4/8;
+    grid-row: 2/10;
+}
+
+.two-grid img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.three-grid {
+    grid-row: 2/10;
+    grid-column: 8/11;
+}
+
+.three-grid img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.four-grid {
+    grid-column: 1/5;
+    grid-row: 10/18;
+}
+
+.four-grid img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.five-grid {
+    grid-column: 5/8;
+    grid-row: 10/18;
+}
+
+.five-grid img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.six-grid {
+    grid-row: 10/18;
+    grid-column: 8/11;
+}
+
+.six-grid img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.testimonial {
+    width: 100%;
+    padding-top: 200px;
+}
+
+.testimonial h2 {
+    grid-column: 4/8;
+    grid-row: 1/2;
+    color: #fff;
+    text-align: center;
+}
+
+.test {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.test img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.twitter {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.inner-twit {
+    background-color: #fff;
+    width: 80%;
+    border-radius: 30px;
+    height: 100%;
+}
+
+.twitt-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.twitt-pic img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.name-pic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding: 20px;
+}
+
+.twitt-name {
+    margin-right: 10px;
+}
+
+.twitt-name h2 {
+    font-size: 20px;
+    margin: 0;
+    color: #03a9f4;
+}
+
+.twitt-name p {
+    font-size: 15px;
+    margin: 0;
+    color: #a1a0a1;
+}
+
+.twit-text p {
+    font-size: 15px;
+    padding: 20px;
+    line-height: 25px;
+}
+
+.follow button {
+    padding: 10px 40px;
+    background-color: #03a9f4;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    margin-left: 195px;
+    cursor: pointer;
+}
+
+.twitt {
+    grid-column: 1/5;
+    grid-row: 1/15;
+}
+
+.facebook {
+    grid-column: 5/11;
+    grid-row: 1/15;
+}
+
+.inner-face h2 {
+    color: #000;
+    margin: 0;
+}
+
+.face {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.fb-img {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    border-radius: 30px;
+    margin-top: 35px;
+}
+
+.fb-img img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.social-media {
+    grid-column: 4/8;
+    grid-row: 16/18;
+    text-align: center;
+}
+
+.social-media svg {
+    font-size: 35px;
+    color: #03a9f4;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.bootstrap-iso {
+    grid-column: 1/11;
+    grid-row: 2/20;
+}
+
+.contact {
+    width: 100%;
+}
+
+.contact h2 {
+    grid-column: 1/5;
+    grid-row: 1/2;
+    color: #fff;
+}
+
+.left-contact {
+    grid-column: 1/6;
+    grid-row: 2/8;
+}
+
+.right-contact {
+    grid-column: 6/11;
+    grid-row: 2/8;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-me {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.contact-me input {
+    display: block;
+    width: 300px;
+    padding-bottom: 30px;
+    border-radius: 25px;
+    border: none;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    background-color: #d8d8d8;
+}
+
+.contact-me button {
+    display: block;
+    padding: 10px 40px;
+    background-color: #de3380;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 20px;
+
+}
+
+.contact-me textarea {
+    width: 300px;
+    padding-bottom: 110px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    background-color: #d8d8d8;
+}
+.foott{
+    margin-top: 40px;
+    height: 70px;
+    background-color: #25262a;
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
