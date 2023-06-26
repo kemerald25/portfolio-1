@@ -17,19 +17,22 @@
     <nav>
         <div class="navbar">
             <div class="logo">
-                <img src="./img/Untitled-2.png" alt="">
+                <img src="./img/logo.png" alt="">
                 <h1>Joanna</h1>
             </div>
 
             <div class="harmburger">
                 <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-                <svg class=" icon active" href="javascript:void(0);"onclick="myFunction()" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
-                        width="1em" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
-                    </svg>
-                    <!-- <i class="fa fa-bars icon active"  href="javascript:void(0);"onclick="myFunction()"></i> -->
+                <svg class=" icon active" href="javascript:void(0);" onclick="myFunction()" stroke="currentColor"
+                    fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path>
+                </svg>
+                <!-- <i class="fa fa-bars icon active"  href="javascript:void(0);"onclick="myFunction()"></i> -->
                 <div id="navMenu">
+                    <a href="#home">Home</a>
                     <a href="#about">About</a>
+                    <a href="#services">Services</a>
                     <a href="#portfolio">Portfolio</a>
                     <a href="#testimonial">Testimonial</a>
                     <a href="#contact">Contact</a>
@@ -38,12 +41,12 @@
             </div>
             <div class="right-nav">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Testimonial</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#testimonial">Testimonial</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -64,7 +67,7 @@
     <!-- section2 -->
 
     <section>
-        <div class="second-section">
+        <div class="second-section" id="about">
             <div class="about grid">
 
                 <div class="top-about grid2">
@@ -142,32 +145,32 @@
             </div>
         </div>
     </section>
-    <section style=" background-color: #f2d5d7;">
-        <div class="portfolio grid5">
+    <section style=" background-color: #25262a;">
+        <div class="portfolio grid5" id="portfolio">
             <h2>My Portfolio</h2>
             <div class="one-grid">
-                <img src="/img/Coffe Laws-Social Media Design.jfif" alt="">
+                <img src="/img/gb star flyer.png" alt="">
             </div>
             <div class="two-grid">
-                <img src="/img/images (10).jfif" alt="">
+                <img src="/img/desktop-design.jpg.png" alt="">
             </div>
             <div class="three-grid">
-                <img src="/img/images (2).jfif" alt="">
+                <img src="/img/STEVE FLYER.png" alt="">
             </div>
             <div class="four-grid">
-                <img src="/img/images (1).jfif" alt="">
+                <img src="/img/food.png" alt="">
             </div>
             <div class="five-grid">
-                <img src="/img/Coffe Laws-Social Media Design.jfif" alt="">
+                <img src="/img/pw flyer2.png" alt="">
             </div>
             <div class="six-grid">
-                <img src="/img/Opening Party Flyer Template for Nightclub - Creative Flyers.jfif" alt="">
+                <img src="/img/bootstrap.png" alt="">
             </div>
         </div>
     </section>
 
     <section>
-        <div class="testimonial grid5">
+        <div class="testimonial grid5" id="testimonial">
             <h2>What People Say About Me</h2>
             <div class="bootstrap-iso">
                 <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
@@ -182,30 +185,36 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="10000">
                             <div class="test">
-                                <img src="/img/mypic1.jpg.png" class="d-block w-100" alt="...">
+                                <img src="/img/nosa.png" class="d-block w-100" alt="...">
                             </div>
 
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Adama</h5>
-                                <p>Some representative placeholder content for the first slide.</p>
+                                <h5>Nosa Amadin</h5>
+                                <p>"Working with Joanna was a fantastic experience! She was able to understand our
+                                    vision and turn it into a stunning website. Her technical expertise and attention to
+                                    detail exceeded our expectations. Highly Recomended"</p>
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
                             <div class="test">
-                                <img src="/img/mypic2.jpg.png" class="d-block w-100" alt="...">
+                                <img src="/img/ivie.png" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
+                                <h5>Alexa Bella</h5>
+                                <p>"Joanna is a talented and skill web developer. She delivered a beautiful website that
+                                    perfectly captured the essence of our brand. She was prompt in responding to our
+                                    request and made the whole process seamless. We couldn't be happier!"</p>
                             </div>
                         </div>
                         <div class="carousel-item">
                             <div class="test">
-                                <img src="/img/Joanna.jpg" class="d-block w-100" alt="...">
+                                <img src="/img/bright.png" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-caption d-none d-md-block">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
+                                <h5>Bright David</h5>
+                                <p>"Joanna is a true artistic genius! She have an incredible ability to think outside
+                                    the box and come up with innovative solutions. Her designs are not only visually
+                                    stunning but also highly functional."</p>
                             </div>
                         </div>
                     </div>
@@ -223,7 +232,7 @@
             </div>
         </div>
     </section>
-    <section style=" background-color: #f2d5d7;">
+    <section style=" background-color: #25262a;">
         <div class="twitter grid5">
             <div class="twitt">
                 <div class="inner-twit">
@@ -252,10 +261,10 @@
                     <h2>FACEBOOK FEED</h2>
                     <div class="face">
                         <div class="fb-img">
-                            <img src="/img/mypic1.jpg.png" alt="">
+                            <img src="/img/mypic2.jpg.png" alt="">
                         </div>
                         <div class="fb-img">
-                            <img src="/img/mypic2.jpg.png" alt="">
+                            <img src="/img/mypic1.jpg.png" alt="">
                         </div>
                     </div>
                 </div>

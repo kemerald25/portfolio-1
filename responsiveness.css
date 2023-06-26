@@ -120,6 +120,9 @@
         display: flex;
         justify-content: center;
     }
+    .carousel-caption{
+        width: 100% !important;
+    }
     .testimonial h2{
         grid-column: 1/11;
     }
@@ -306,6 +309,9 @@
     .testimonial h2{
         grid-column: 1/11;
     }
+    .carousel-caption{
+        width: 100% !important;
+    }
     .twitt{
         grid-column: 2/10;
         grid-row: 1/13;
@@ -490,6 +496,9 @@
         display: flex;
         align-items: center;
     }
+    .portfolio{
+        padding-bottom: 50px;
+    }
     .portfolio h2{
         grid-column: 1/11;
     }
@@ -526,6 +535,9 @@
         grid-row: 8/12;
         display: flex;
         justify-content: center;
+    }
+    .carousel-caption{
+        width: 100% !important;
     }
     .testimonial h2{
         grid-column: 1/11;
@@ -751,6 +763,9 @@
         grid-row: 8/10;
         display: flex;
         justify-content: center;
+    }
+    .carousel-caption{
+        width: 100% !important;
     }
     .testimonial h2{
         grid-column: 1/11;

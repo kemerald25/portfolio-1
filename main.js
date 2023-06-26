@@ -6750,7 +6750,7 @@
 
     /* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
 function myFunction() {
-  var x = document.getElementById("navMenu");
+  let x = document.getElementById("navMenu");
   if (x.style.display === "block") {
     x.style.display = "none";
   } else {
